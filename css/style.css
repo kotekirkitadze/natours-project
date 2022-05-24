@@ -61,16 +61,28 @@ translate by itselft to the element */
 	transform: translate(-50%, -50%);
 }
 
+/* რაღაცატომ შეიკდება ანიმაციისას და არავინ
+იცის რატომ და ეს არის მისი ფიქსი და არც
+არავინ იცისო რატომ ფიქსავსო: backface-visibility: hidden; */
 .heading-primary {
 	color: #fff;
 	text-transform: uppercase;
+	backface-visibility: hidden;
 }
 
+/* animation-delay: 3s - it waits
+3 second before animation starts */
+/* animation-iteration-count: 3; - happens 3 times */
+/* animation-timing-function: ease-out; - how
+animation is processed */
 .heading-primary-main {
 	display: block;
 	font-size: 60px;
 	font-weight: 400;
 	letter-spacing: 35px;
+	animation-name: moveInLeft;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
 }
 
 .heading-primary-sub {
@@ -78,4 +90,37 @@ translate by itselft to the element */
 	font-size: 20px;
 	font-weight: 700;
 	letter-spacing: 17.4px;
+	animation: moveInRight 1s ease-out;
+}
+
+@keyframes moveInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-100px);
+	}
+
+	80% {
+		transform: translateX(10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
+}
+
+@keyframes moveInRight {
+	0% {
+		opacity: 0;
+		transform: translateX(100px);
+	}
+
+	80% {
+		transform: translateX(-10px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate(0);
+	}
 }
