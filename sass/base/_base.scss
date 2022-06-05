@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	//This defines what one REM is
+	font-size: 62.5%;
+}
+
+/* Everythingr related to the fonts is written
+in body because it is inhereted by children elements */
+body {
+	box-sizing: border-box;
+}

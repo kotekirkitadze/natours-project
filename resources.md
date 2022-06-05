@@ -37,3 +37,5 @@ reset a property to its initial value.
     $color-black: #000;
     rgba($color-black, 0.2);
     but in sass it works
+
+7.  no underscore in scss for partials imports and also no .scss in imports
