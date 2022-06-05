@@ -26,8 +26,14 @@ $width-button: 150px;
 	color: $color;
 }
 
+//functions
+
+@function divide($a, $b) {
+	@return $a / $b;
+}
+
 nav {
-	margin: 30px;
+	margin: divide(60, 2) * 1px; // 30px;
 	background-color: $color-primary;
 
 	//როდესაც ვაფლოატეთ ქოლაფსინგი ხდება
@@ -60,8 +66,23 @@ nav {
 	float: right;
 }
 
-.btn-main:link,
-.btn-hot:link {
+// .btn-main:link,
+// .btn-hot:link {
+// 	padding: 10px;
+// 	display: inline-block;
+// 	text-align: center;
+// 	border-radius: 100px;
+// 	width: $width-button;
+// 	@include style-link-text($color-text-light);
+// }
+
+//ექსტენდი სელექტორს აკოპირებს და არა ფროფერთების კოდს,
+//მიქსინები პირიქით.
+//related element ების სელექტორების დროს ექსთენდები შეგვიძლია
+// გამოვიყენოთ. Not related elements/selector - ის შემთხვევაში
+// არაა ექსთენდების გამოყენება კარგი პრაქტიკა
+
+%btn-placeholder {
 	padding: 10px;
 	display: inline-block;
 	text-align: center;
@@ -72,6 +93,7 @@ nav {
 
 .btn-main {
 	&:link {
+		@extend %btn-placeholder;
 		background-color: $color-secondary;
 	}
 
@@ -83,6 +105,7 @@ nav {
 
 .btn-hot {
 	&:link {
+		@extend %btn-placeholder;
 		background-color: $color-tertiary;
 	}
 
