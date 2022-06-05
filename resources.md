@@ -32,3 +32,8 @@ margin, padding and ... - are note inhereted
 we can force inheritance by keyword inherit.
 Also, we can use initial keyword to
 reset a property to its initial value.
+
+6.  in regular css in rgba color like hexadecimal do not work like that:
+    $color-black: #000;
+    rgba($color-black, 0.2);
+    but in sass it works
