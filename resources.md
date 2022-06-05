@@ -39,3 +39,8 @@ reset a property to its initial value.
     but in sass it works
 
 7.  no underscore in scss for partials imports and also no .scss in imports
+8.  to make image flexible we use percentage
+    (and max-width in a certain situations) instead of
+    pixels, because images behaves differently //than text.
+
+9.  max-width is good to fill the place with 100% available space, if viewport is smaller than specified width
