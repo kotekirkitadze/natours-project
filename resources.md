@@ -55,3 +55,16 @@ reset a property to its initial value.
     like that: [class^="col-"] {}.
     This one: [class*="col-"]{} takse all emenets which contains col-.
     This one: [class$="col-"]{} takes which ends with col-.
+
+12. შეგვიძლია ბექრაუნდი სადაც ტექსტია იქ მოვათავსოთ ვებკიტით:
+    -webkit-background-clip: text; და შემდეგ ტექსტი გავხადოთ transparent რომ
+    გამოჩნდეს ბექგრაუნდი.
+
+13. დივშ თუ მოვაქცევთ ინლაინ ბლოკს, როგორც ტექსტი ისე ექცევა მას
+    და text-align: center; - ით შეგვიძლია გავცენტროთ.
+14. ჩვეულებრივ ბორდერსა და ელემენტს შორის ადგილს ვერ გამოვყოფთ,
+    მაგრამ აუთლაინით და აუთლაინ ოფსეთით შეგვიძლია მაგის მიხწევა:
+    outline: 1.5rem solid $color-primary; - ბორდერს გაუკეთებს
+    outline-offset: 2rem; -- ბორდერსა და ელემენტს შორის ადგილს გააკეთებს
+15. //composition:hover composition\_\_photo:not(:hover)რომელიც დაჰოვერებული
+    არაა იმას აარჩევს
