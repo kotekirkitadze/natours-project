@@ -55,3 +55,10 @@ reset a property to its initial value.
     like that: [class^="col-"] {}.
     This one: [class*="col-"]{} takse all emenets which contains col-.
     This one: [class$="col-"]{} takes which ends with col-.
+
+12. შეგვიძლია ბექრაუნდი სადაც ტექსტია იქ მოვათავსოთ ვებკიტით:
+    -webkit-background-clip: text; და შემდეგ ტექსტი გავხადოთ transparent რომ
+    გამოჩნდეს ბექგრაუნდი.
+
+13. დივშ თუ მოვაქცევთ ინლაინ ბლოკს, როგორც ტექსტი ისე ექცევა მას
+    და text-align: center; - ით შეგვიძლია გავცენტროთ.
