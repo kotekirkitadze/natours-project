@@ -44,3 +44,14 @@ reset a property to its initial value.
     pixels, because images behaves differently //than text.
 
 9.  max-width is good to fill the place with 100% available space, if viewport is smaller than specified width
+
+10. to use variables in calc function, we need this kind of
+    syntax: calc((100% - (2 \* #{$gutter-horizontal}));
+
+11. we can select element by attribuet in css:
+    [alt="Logo"] {}
+    aslos, we can do not only by equal but also like take
+    all elements that classes starts with: col-
+    like that: [class^="col-"] {}.
+    This one: [class*="col-"]{} takse all emenets which contains col-.
+    This one: [class$="col-"]{} takes which ends with col-.
