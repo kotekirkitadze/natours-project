@@ -71,3 +71,8 @@ reset a property to its initial value.
 16. <i> თეგი does not stands for icon, many are confused maybe.
     In prevous version of HTML, it was used to make text italic.
     It stands for italic, but now we no longer use it.
+
+17. icon font is text და ჩვენ შეგვიძლია ბექრაუნდზე ისე დავქლიფოთ,
+    რათა ფერები დავუყენოთ ხოლმე.
+
+18. & > _ ასელექტებს დაირექთ შვილებს და & _ ასელექთებს ყველა შვილს.
