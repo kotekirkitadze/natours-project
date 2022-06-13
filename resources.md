@@ -112,3 +112,8 @@ reset a property to its initial value.
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     იმდენიმე ფიქსელი, რაც მშობელს უწერია ბორდერ რადიუსზე, ამ შემთხვევაში 3.
+27. If we want to use -webkit-shape-outside, shape-outside properties element should
+    have height, width and floated set. და ეს ფროფერთი გვეხმარება, რომ ელემენტსი ირგვლივ
+    ვაფლოათოთ ელემენტები(ტექსტი თუნდაც).
+28. როცა ელემენტი დაფლოატებულია(float:left) და ასე შემდეგ, ჯობია რომ მის მარჯინებში
+    არ ჩავერიოთ და transform:translate() გამოვიყენოთ.
