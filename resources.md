@@ -106,3 +106,9 @@ reset a property to its initial value.
     ბლოკებად ემუშვა სტილებს:
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
+26. ქლიფპეზის გამოყენების შემდეგ ოვერფლოუ აღარ ედება
+    და ხელით უნდა გვაუწეროთ თუ გვიდნა რომ მომრგვალდეს:
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    იმდენიმე ფიქსელი, რაც მშობელს უწერია ბორდერ რადიუსზე, ამ შემთხვევაში 3.
