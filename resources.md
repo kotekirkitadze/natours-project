@@ -129,3 +129,6 @@ reset a property to its initial value.
 33. object-fit: cover; მუშაობს როგორც background-size: cover; მაგრამ
     ობჯექთ ფით html ის ელემენტებზე მუშაობს და background-size კი ფოტოებზე.
 34. background-size - ზე 100% იგივეა, რაც cover.
+35. ელემენტები ფონტ ფემილის ავტომატურად აინჰერითებენ, მაგრამ ინფუთ ელემენტი არა.
+36. ელემენტის დისფლეი ბლოკი(display:block) ზე თუ არაა დასეტილი,
+    მაშინ block მოდელ ფროფერთებს(margin და ასე შემდეგ) ვერ გამოვიყენებთ.
