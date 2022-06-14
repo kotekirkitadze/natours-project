@@ -112,3 +112,19 @@ reset a property to its initial value.
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     იმდენიმე ფიქსელი, რაც მშობელს უწერია ბორდერ რადიუსზე, ამ შემთხვევაში 3.
+27. If we want to use -webkit-shape-outside, shape-outside properties element should
+    have height, width and floated set. და ეს ფროფერთი გვეხმარება, რომ ელემენტსი ირგვლივ
+    ვაფლოათოთ ელემენტები(ტექსტი თუნდაც).
+28. როცა ელემენტი დაფლოატებულია(float:left) და ასე შემდეგ, ჯობია რომ მის მარჯინებში
+    არ ჩავერიოთ და transform:translate() გამოვიყენოთ.
+29. backface-visibility: hidden; - ანიმცაიების ბოლოში ფიქსავს,
+    მაგალითად, ჰოვერზე ტრანსფორმის ბოლოში.
+30. filter: blur(3px) brightness(80%);
+    blur ბლარავს და ბრაიტნესზე 100 ზე ქვემოთ
+    უფრო ადარქებს და 100 ზემოთ აბრაითნესებს.
+31. coverr.co videos for websites
+32. როცა ოფასითის ვაყენებთ ფერენთ ელემენტს და მის შვილებსაც ედებათ ოფასითი. მაგრამ ესე
+    თუ არ გვინდა და მარტო მშობლის ბექრგაუნდი იყოს ოფასითი, მაშინ rgba() უნდა გამოვიყენოთ:
+    background-color: rgba($color-white, 0.6);
+33. object-fit: cover; მუშაობს როგორც background-size: cover; მაგრამ
+    ობჯექთ ფით html ის ელემენტებზე მუშაობს და background-size კი ფოტოებზე.
