@@ -122,3 +122,9 @@ reset a property to its initial value.
 30. filter: blur(3px) brightness(80%);
     blur ბლარავს და ბრაიტნესზე 100 ზე ქვემოთ
     უფრო ადარქებს და 100 ზემოთ აბრაითნესებს.
+31. coverr.co videos for websites
+32. როცა ოფასითის ვაყენებთ ფერენთ ელემენტს და მის შვილებსაც ედებათ ოფასითი. მაგრამ ესე
+    თუ არ გვინდა და მარტო მშობლის ბექრგაუნდი იყოს ოფასითი, მაშინ rgba() უნდა გამოვიყენოთ:
+    background-color: rgba($color-white, 0.6);
+33. object-fit: cover; მუშაობს როგორც background-size: cover; მაგრამ
+    ობჯექთ ფით html ის ელემენტებზე მუშაობს და background-size კი ფოტოებზე.
