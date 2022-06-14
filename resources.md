@@ -128,3 +128,4 @@ reset a property to its initial value.
     background-color: rgba($color-white, 0.6);
 33. object-fit: cover; მუშაობს როგორც background-size: cover; მაგრამ
     ობჯექთ ფით html ის ელემენტებზე მუშაობს და background-size კი ფოტოებზე.
+34. background-size - ზე 100% იგივეა, რაც cover.
