@@ -119,3 +119,6 @@ reset a property to its initial value.
     არ ჩავერიოთ და transform:translate() გამოვიყენოთ.
 29. backface-visibility: hidden; - ანიმცაიების ბოლოში ფიქსავს,
     მაგალითად, ჰოვერზე ტრანსფორმის ბოლოში.
+30. filter: blur(3px) brightness(80%);
+    blur ბლარავს და ბრაიტნესზე 100 ზე ქვემოთ
+    უფრო ადარქებს და 100 ზემოთ აბრაითნესებს.
