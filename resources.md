@@ -157,3 +157,6 @@ reset a property to its initial value.
     ჩვენ გვინდა რომ ეს კლასები დაედოს, რაც არ უნდა იყოს.
 46. inline ელემენტები ისე იქცევიან, როგორც ტექსტი.
 47. inline-block მთლიან სიგრძეს არ იკავებს, არამედ იმდენს იკავებს, რამდენიც კონტენტს ჭირდება.
+48. position:fixed ანალოგიურად მუშობს, როგორც აბსოლუტ, მაგრამ ფიქსავს.
+49. cubic-bezier sites: https://cubic-bezier.com/ https://easings.net/
+50. transform-origin:left defines where transformation should happen.
