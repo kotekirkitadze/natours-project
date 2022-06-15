@@ -158,3 +158,4 @@ reset a property to its initial value.
 46. inline ელემენტები ისე იქცევიან, როგორც ტექსტი.
 47. inline-block მთლიან სიგრძეს არ იკავებს, არამედ იმდენს იკავებს, რამდენიც კონტენტს ჭირდება.
 48. position:fixed ანალოგიურად მუშობს, როგორც აბსოლუტ, მაგრამ ფიქსავს.
+49. cubic-bezier sites: https://cubic-bezier.com/ https://easings.net/
