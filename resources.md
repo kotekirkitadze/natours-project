@@ -128,3 +128,30 @@ reset a property to its initial value.
     background-color: rgba($color-white, 0.6);
 33. object-fit: cover; მუშაობს როგორც background-size: cover; მაგრამ
     ობჯექთ ფით html ის ელემენტებზე მუშაობს და background-size კი ფოტოებზე.
+34. background-size - ზე 100% იგივეა, რაც cover.
+35. ელემენტები ფონტ ფემილის ავტომატურად აინჰერითებენ, მაგრამ ინფუთ ელემენტი არა.
+36. ელემენტის დისფლეი ბლოკი(display:block) ზე თუ არაა დასეტილი,
+    მაშინ block მოდელ ფროფერთებს(margin და ასე შემდეგ) ვერ გამოვიყენებთ.
+37. &\_\_input:placeholder-shown {} as soon as placeholder is shown.
+38. &**input:placeholder-shown &**label{} ასე ვასელექთებთ ლეიბელს, იმ შემთხვევაში,
+    როცა ლებლი შვილი ელემენტი იქნებოდა ინფუთის, მაგრამ არ არის. ლეიბლი სიბლინგი, ერთ დონეზე არიან
+    და ამ შემთხვევაში სიბლინგ სელექტორი + უნდა გამოვიყენოთ:
+    &**input:placeholder-shown + &**label{} - adjecement sibling: it is a just sibling
+    that comes immediately after the element that we select in the first place(ამ შემთხვევაში
+    input). მაგრამ მათ შორის სხვა ელემენტიც რომ იყოს,
+    მაინც შეგვეძლებოდა adjacement sibling selector - ის გამოყენება, მაგრამ მეორნაირის(~):
+    &**input:placeholder-shown ~ &**label{}. ~ is general sibling selector. This works
+    when there is a more levels in between.
+39. ოფასითისით რომ ვაქრობთ, ვიუზე მაინც რჩება და visibility:hidden ით კი
+    it is gone. მაგრამ ოფაისთის animating შეგვიძლია, მაგრამ ვიზიბილითის არა.
+    ამიტომ ვიყენებთ ერთად.
+40. რადიო ბათონების გასტილვა სიესესით არ შეგვიძ₾ია და ამიტომ ჩვენი რადიო ბათონების აგება გვიწევს
+    და ჩვენს შემთხვევაში ლეიბლში სპანი ჩავსვით და ის გავსტილეთ და ინფუთ ელემენტი კი დავმალეთ.
+    და რადგანაც ლეიბლი და ინფუთი დაქონექთებული გვაქვს, მასზე დაკლიკვისას(თან მასშია ჩასმული
+    ჩვენი აგებული რედიო ბათონი) რედიო ბათონი მაინც ინიშნება - that is the trick.
+41. display:inline-block; does not create line break.
+42. after ში აუცილებელია რომ გვქონდეს კონტენტი, display:block, height და width.
+43. ფორმაში a ენქორ ელემენტი არ გვინდა, რადგან ექშენი უნდა მოხდეს(დასაბმითება).
+44. ბათონის ვიზითიდ და ლინკ სტეიტი არ აქვს ენქორ ელემენტისგან განსხვავებით.
+45. უტილიტი კლასებში !important ების დაწერა ჩვეულებრივი პრაქტიკაა, რადგან
+    ჩვენ გვინდა რომ ეს კლასები დაედოს, რაც არ უნდა იყოს.
