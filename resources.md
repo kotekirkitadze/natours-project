@@ -132,3 +132,16 @@ reset a property to its initial value.
 35. ელემენტები ფონტ ფემილის ავტომატურად აინჰერითებენ, მაგრამ ინფუთ ელემენტი არა.
 36. ელემენტის დისფლეი ბლოკი(display:block) ზე თუ არაა დასეტილი,
     მაშინ block მოდელ ფროფერთებს(margin და ასე შემდეგ) ვერ გამოვიყენებთ.
+37. &\_\_input:placeholder-shown {} as soon as placeholder is shown.
+38. &**input:placeholder-shown &**label{} ასე ვასელექთებთ ლეიბელს, იმ შემთხვევაში,
+    როცა ლებლი შვილი ელემენტი იქნებოდა ინფუთის, მაგრამ არ არის. ლეიბლი სიბლინგი, ერთ დონეზე არიან
+    და ამ შემთხვევაში სიბლინგ სელექტორი + უნდა გამოვიყენოთ:
+    &**input:placeholder-shown + &**label{} - adjecement sibling: it is a just sibling
+    that comes immediately after the element that we select in the first place(ამ შემთხვევაში
+    input). მაგრამ მათ შორის სხვა ელემენტიც რომ იყოს,
+    მაინც შეგვეძლებოდა adjacement sibling selector - ის გამოყენება, მაგრამ მეორნაირის(~):
+    &**input:placeholder-shown ~ &**label{}. ~ is general sibling selector. This works
+    when there is a more levels in between.
+39. ოფასითისით რომ ვაქრობთ, ვიუზე მაინც რჩება და visibility:hidden ით კი
+    it is gone. მაგრამ ოფაისთის animating შეგვიძლია, მაგრამ ვიზიბილითის არა.
+    ამიტომ ვიყენებთ ერთად.
