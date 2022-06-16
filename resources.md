@@ -160,3 +160,13 @@ reset a property to its initial value.
 48. position:fixed ანალოგიურად მუშობს, როგორც აბსოლუტ, მაგრამ ფიქსავს.
 49. cubic-bezier sites: https://cubic-bezier.com/ https://easings.net/
 50. transform-origin:left defines where transformation should happen.
+51. linear gradient ერთი მხრიდან იწყებს ფერის ცვლილებას და radial-gradient კი
+    შუიდან იწყებს და გარშემო დაირექშენზე გადადის და ცვლის ფერს.
+52. hyphens რომ გამოვიყენოთ გვჭირდება html ტეგში ენა გვქონდეს დასეტილი:
+    <html lang="en">.
+53. display:none ით we can not do animate anymore, instead we can use opacity:0
+    and visibility:hidden; ოფასითი არაა საკმარისი, რადგან მაგით კი გავაქრობთ,
+    მაგრამ ელემენტი ისევ ვიუზე იქნება და ამიტომ ვიზიბილითის გაწერაც გვჭირდება.
+54. მაგალითად მიქსინში თუ გვიწერია ტრანსფორმი, და მერე მოგვიანებით კლასში ტრანსფორმზე
+    რამის დამატება თუ გვინდა, მაშინ რაც მიქსინში გვიწერია ეგეც უნდა გადმოვაკოპიროთ და
+    ახალიც დავამატოთ.
