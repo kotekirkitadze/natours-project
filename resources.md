@@ -170,3 +170,13 @@ reset a property to its initial value.
 54. მაგალითად მიქსინში თუ გვიწერია ტრანსფორმი, და მერე მოგვიანებით კლასში ტრანსფორმზე
     რამის დამატება თუ გვინდა, მაშინ რაც მიქსინში გვიწერია ეგეც უნდა გადმოვაკოპიროთ და
     ახალიც დავამატოთ.
+55. mobile first - min-width, desktop first - max-width.
+56. Rem and em in the media queries are not affected by
+    a root font-size settings. This means that one rem or one em
+    in a media query is always just equal to the font-size
+    which is coming from the browser and that is by default 16px. მაგრამ იუზერმა ხელით რომ შეცვალოს 20 ფიქსელზე, ეს იუნითებიც
+    20 ფიქსელი იქნებიან, no matter what we have in our base font definition.
+    ასევე, მედიქ ეურიში უნდა გამოვიყენოთ ემი, რადგან რემი ზოგ ბრაუზერში
+    ამ დროს უცნაურად იქცევა და ყველაზე ოპტიმალური ოფშენი ემი არის.
+57. მედია ქუერების ორდერი მნიშვნელოვანი, თავიდან ყველაზე დიდი ვიუპორტი და
+    ბოლოში ყველაზე პატარა ვიუპორტი უნდა იყოს.
