@@ -8,11 +8,34 @@
 
 html {
 	//This defines what one REM is
-	font-size: 62.5%;
+	font-size: 62.5%; //1 rem = 10px, 10px/16 = 62.5%
+
+	// width < 1200px?
+	// 1 rem = 9px, 9/16 = 56.25%
+	@include respond(tab-land) {
+		font-size: 56.25%;
+	}
+
+	// width < 900px?
+	// 1 rem = 8px, 8/16 = 50%
+	@include respond(tab-port) {
+		font-size: 50%;
+	}
+
+	// width > 1800px?
+	// 1 rem = 12, 12/16=75%
+	@include respond(big-desktop) {
+		font-size: 75%;
+	}
 }
 
 /* Everythingr related to the fonts is written
 in body because it is inhereted by children elements */
 body {
 	box-sizing: border-box;
+	padding: 3rem;
+
+	@include respond(tab-port) {
+		padding: 0;
+	}
 }

@@ -128,7 +128,9 @@ reset a property to its initial value.
     background-color: rgba($color-white, 0.6);
 33. object-fit: cover; მუშაობს როგორც background-size: cover; მაგრამ
     ობჯექთ ფით html ის ელემენტებზე მუშაობს და background-size კი ფოტოებზე.
-34. background-size - ზე 100% იგივეა, რაც cover.
+34. background-size - ზე 100% იგივეა, რაც cover, მაგრამ უფრო x დაირექშენზე და
+    მედია ქუერის დროს მოგვიწია მაინც ქავერზე დასმა, რადგან ვაი
+    დაირექშენზე გააფუჭა დაპატარავებისას.
 35. ელემენტები ფონტ ფემილის ავტომატურად აინჰერითებენ, მაგრამ ინფუთ ელემენტი არა.
 36. ელემენტის დისფლეი ბლოკი(display:block) ზე თუ არაა დასეტილი,
     მაშინ block მოდელ ფროფერთებს(margin და ასე შემდეგ) ვერ გამოვიყენებთ.
@@ -170,3 +172,15 @@ reset a property to its initial value.
 54. მაგალითად მიქსინში თუ გვიწერია ტრანსფორმი, და მერე მოგვიანებით კლასში ტრანსფორმზე
     რამის დამატება თუ გვინდა, მაშინ რაც მიქსინში გვიწერია ეგეც უნდა გადმოვაკოპიროთ და
     ახალიც დავამატოთ.
+55. mobile first - min-width, desktop first - max-width.
+56. Rem and em in the media queries are not affected by
+    a root font-size settings. This means that one rem or one em
+    in a media query is always just equal to the font-size
+    which is coming from the browser and that is by default 16px. მაგრამ იუზერმა ხელით რომ შეცვალოს 20 ფიქსელზე, ეს იუნითებიც
+    20 ფიქსელი იქნებიან, no matter what we have in our base font definition.
+    ასევე, მედიქ ეურიში უნდა გამოვიყენოთ ემი, რადგან რემი ზოგ ბრაუზერში
+    ამ დროს უცნაურად იქცევა და ყველაზე ოპტიმალური ოფშენი ემი არის.
+57. მედია ქუერების ორდერი მნიშვნელოვანი, თავიდან ყველაზე დიდი ვიუპორტი და
+    ბოლოში ყველაზე პატარა ვიუპორტი უნდა იყოს - ეს desktop-first approach - ზე
+    არის, რადგან max-width ებს ვიყენებთ და mobile-first approach - რომ იყოს,
+    იქ რადგანაც min-width ებს ვიყენებთ, მაშინ მედია ქვერების განლაგება პირიქით იქნებოდა: ჯერ პატარა ვიუპორტები და მერე უფრო დიდები ბოლოში.
