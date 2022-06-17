@@ -33,4 +33,9 @@ html {
 in body because it is inhereted by children elements */
 body {
 	box-sizing: border-box;
+	padding: 3rem;
+
+	@include respond(tab-port) {
+		padding: 0;
+	}
 }
