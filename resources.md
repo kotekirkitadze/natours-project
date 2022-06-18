@@ -184,3 +184,6 @@ reset a property to its initial value.
     ბოლოში ყველაზე პატარა ვიუპორტი უნდა იყოს - ეს desktop-first approach - ზე
     არის, რადგან max-width ებს ვიყენებთ და mobile-first approach - რომ იყოს,
     იქ რადგანაც min-width ებს ვიყენებთ, მაშინ მედია ქვერების განლაგება პირიქით იქნებოდა: ჯერ პატარა ვიუპორტები და მერე უფრო დიდები ბოლოში.
+58. Combine conditions with queries: (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em)
+    და მძიმით or - ს ნიშნავს.
+59. ფრეფიქსიან(webkit) ფროფერთის ვწერთ ყოველთვის ჯერ პირველს და მერე ორიგინალს.
