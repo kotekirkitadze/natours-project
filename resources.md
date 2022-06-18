@@ -184,6 +184,9 @@ reset a property to its initial value.
     ბოლოში ყველაზე პატარა ვიუპორტი უნდა იყოს - ეს desktop-first approach - ზე
     არის, რადგან max-width ებს ვიყენებთ და mobile-first approach - რომ იყოს,
     იქ რადგანაც min-width ებს ვიყენებთ, მაშინ მედია ქვერების განლაგება პირიქით იქნებოდა: ჯერ პატარა ვიუპორტები და მერე უფრო დიდები ბოლოში.
-58. Combine conditions with queries: (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em)
+58. (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em)
     და მძიმით or - ს ნიშნავს.
+    https://caniuse.com/
 59. ფრეფიქსიან(webkit) ფროფერთის ვწერთ ყოველთვის ჯერ პირველს და მერე ორიგინალს.
+60. backdrop-filter: blur(10px) მსგავსი ეფექტი filter:blur(3px) ით მივაღწიეთ, მაგრამ
+    ბექდროპი ელემენტის ბექრაუნდზე დავსვით და ფილტერი კი თვითონ ელემენტზე.
